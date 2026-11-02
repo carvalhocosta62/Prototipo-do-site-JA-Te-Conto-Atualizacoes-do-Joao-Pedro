@@ -1,0 +1,600 @@
+/* Cor do cabeçalho */
+.cabecalho-verde-agua {
+    background-color: #40BFA3;
+}
+
+
+/* Imagens do carrossel */
+#carouselExampleControls .carousel-item img {
+    width: 100%;
+    height: 700px;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+/* Imagens dos cards */
+.card-img-top {
+    height: 700px;
+    width: 100%;
+    
+}
+
+
+/* Fonte principal do Já Te Conto */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Nome do projeto */
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+/* Links do menu */
+.navbar .nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+/* Campo e botão de pesquisa */
+.navbar .form-control,
+.navbar .btn {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ===== VISUAL DA TELA DE LOGIN ===== */
+
+body.pagina-login {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pagina-login .tela-acesso {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 16px;
+    background: linear-gradient(135deg, #e2f8f1, #f8fffc, #d4f2e8);
+}
+
+.pagina-login .caixa-acesso {
+    width: 100%;
+    max-width: 950px;
+    min-height: 540px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 28px;
+    box-shadow: 0 12px 40px rgba(35, 117, 98, 0.15);
+}
+
+.pagina-login .lado-capitu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 45px;
+}
+
+.pagina-login .lado-formulario h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #267d69;
+    text-align: right;
+    margin-top: 40px;
+}
+
+.pagina-login .lado-capitu p {
+    max-width: 400px;
+    line-height: 1.7;
+}
+
+.pagina-login .capitu-provisoria {
+    font-size: 100px;
+    margin-bottom: 20px;
+    animation: capitu-flutuar 3s ease-in-out infinite;
+}
+
+@keyframes capitu-flutuar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.pagina-login .lado-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 45px;
+    margin-top: 166px;
+}
+
+.pagina-login .lado-capitu h2 {
+    color: #267d69;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.pagina-login .texto-apoio {
+    color: #71817c;
+    margin-bottom: 25px;
+}
+
+.pagina-login .campo-acesso {
+    margin-bottom: 18px;
+}
+
+.pagina-login .campo-acesso label {
+    display: block;
+    margin-bottom: 7px;
+    color: #38574f;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.pagina-login .campo-acesso input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cde5dc;
+    border-radius: 12px;
+    outline: none;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+.pagina-login .campo-acesso input:focus {
+    border-color: #40BFA3;
+    box-shadow: 0 0 0 3px rgba(64, 191, 163, 0.15);
+}
+
+.pagina-login .botao-acesso {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 12px;
+    background: #40BFA3;
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 29px;
+}
+
+.pagina-login .botao-acesso:hover {
+    background: #299d83;
+}
+
+.pagina-login .link-alternar {
+    margin-top: 22px;
+    text-align: center;
+    color: #657a73;
+    font-size: 0.9rem;
+}
+
+.pagina-login .link-alternar a {
+    color: #27866f;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.pagina-login .link-alternar a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    .pagina-login .caixa-acesso {
+        grid-template-columns: 1fr;
+        max-width: 440px;
+    }
+
+    .pagina-login .lado-capitu {
+        padding: 25px 20px;
+    }
+
+    .pagina-login .capitu-provisoria {
+        font-size: 65px;
+        margin-bottom: 8px;
+    }
+
+    .pagina-login .lado-capitu h1 {
+        font-size: 1.6rem;
+    }
+
+    .pagina-login .lado-capitu p {
+        margin-bottom: 0;
+    }
+
+    .pagina-login .lado-formulario {
+        padding: 30px 24px;
+    }
+}
+
+/* ========================================
+   INTRODUÇÃO — JÁ TE CONTO
+======================================== */
+
+.pagina-introducao {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: #f4fbf8;
+    color: #24483e;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-topo {
+    width: 100%;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.intro-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #246b58;
+    font-size: 1.35rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.intro-logo:hover {
+    color: #246b58;
+}
+
+.intro-logo-icone {
+    font-size: 1.8rem;
+}
+
+.intro-pular {
+    color: #56756b;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.intro-pular:hover {
+    color: #16866b;
+}
+
+.intro-principal {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 6% 25px;
+}
+
+#carrosselIntroducao {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 32px;
+    box-shadow: 0 20px 60px rgba(39, 111, 88, 0.09);
+    overflow: hidden;
+}
+
+#carrosselIntroducao .carousel-item {
+    min-height: 570px;
+}
+
+.intro-conteudo {
+    min-height: 570px;
+    padding: 38px 100px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.intro-ilustracao {
+    position: relative;
+    width: 220px;
+    height: 155px;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #e8f7f0;
+}
+
+.intro-ilustracao span {
+    position: absolute;
+}
+
+.livro-central {
+    font-size: 5.3rem;
+    transform: rotate(-7deg);
+}
+
+.livro-lateral {
+    font-size: 3rem;
+    left: 15px;
+    bottom: 14px;
+    transform: rotate(-18deg);
+}
+
+.estrela {
+    color: #e6b84f;
+    font-size: 1.8rem;
+}
+
+.estrela-1 {
+    top: 8px;
+    left: 28px;
+}
+
+.estrela-2 {
+    top: 22px;
+    right: 25px;
+}
+
+.estrela-3 {
+    right: 30px;
+    bottom: 12px;
+}
+
+.ilustracao-mundo {
+    background: #e9f4ff;
+}
+
+.nuvem {
+    top: 5px;
+    left: 20px;
+    color: #a2c6e7;
+    font-size: 3.5rem;
+}
+
+.livro-aberto {
+    font-size: 5.5rem;
+    transform: rotate(5deg);
+}
+
+.folha {
+    right: 17px;
+    bottom: 5px;
+    font-size: 2.3rem;
+    transform: rotate(18deg);
+}
+
+.br ilho {
+    color: #e6b84f;
+}
+
+.brilho {
+    color: #e6b84f;
+    font-size: 1.8rem;
+}
+
+.brilho-1 {
+    top: 17px;
+    right: 25px;
+}
+
+.brilho-2 {
+    left: 25px;
+    bottom: 18px;
+}
+
+.ilustracao-jornada {
+    background: #fff4df;
+}
+
+.livro-jornada {
+    font-size: 4.5rem;
+    left: 36px;
+    bottom: 22px;
+    transform: rotate(-12deg);
+}
+
+.mascote-jornada {
+    font-size: 4.3rem;
+    right: 32px;
+    top: 16px;
+}
+
+.caminho {
+    color: #87c9ad;
+    font-size: 4rem;
+    left: 60px;
+    top: 20px;
+    transform: rotate(-35deg);
+}
+
+.intro-etiqueta {
+    margin-bottom: 12px;
+    color: #4b9b80;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.intro-conteudo h1 {
+    margin: 0 0 14px;
+    color: #24483e;
+    font-size: clamp(1.8rem, 3.4vw, 2.7rem);
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.intro-conteudo h1 span {
+    color: #35a985;
+}
+
+.intro-conteudo p {
+    max-width: 540px;
+    margin: 0 0 24px;
+    color: #70847c;
+    font-size: 0.98rem;
+    line-height: 1.8;
+}
+
+.intro-botao {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 12px;
+    background: #40bfa3;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 7px 18px rgba(64, 191, 163, 0.22);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.intro-botao:hover {
+    background: #299e83;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.intro-botao span {
+    font-size: 1.2rem;
+}
+
+.intro-paginacao {
+    display: flex;
+    gap: 8px;
+    margin-top: 27px;
+}
+
+.intro-paginacao .ponto {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #d5e5dd;
+}
+
+.intro-paginacao .ponto.ativo {
+    width: 25px;
+    border-radius: 8px;
+    background: #40bfa3;
+}
+
+.intro-seta {
+    width: 48px;
+    height: 48px;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: #f0faf5;
+    opacity: 1;
+}
+
+.intro-seta span {
+    color: #278b70;
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.intro-seta:hover {
+    background: #dcf4e9;
+}
+
+.intro-seta-esquerda {
+    left: 20px;
+}
+
+.intro-seta-direita {
+    right: 20px;
+}
+
+.intro-rodape {
+    padding: 18px;
+    color: #80958c;
+    text-align: center;
+    font-size: 0.78rem;
+}
+
+.intro-rodape span {
+    color: #40bfa3;
+    margin-left: 5px;
+}
+
+/* Ajustes para celular */
+@media (max-width: 600px) {
+    .intro-topo {
+        padding: 18px 5%;
+    }
+
+    .intro-logo {
+        font-size: 1.1rem;
+    }
+
+    .intro-pular {
+        font-size: 0.78rem;
+    }
+
+    .intro-principal {
+        padding: 8px 4% 20px;
+    }
+
+    #carrosselIntroducao {
+        border-radius: 23px;
+    }
+
+    #carrosselIntroducao .carousel-item,
+    .intro-conteudo {
+        min-height: 570px;
+    }
+
+    .intro-conteudo {
+        padding: 35px 35px 25px;
+    }
+
+    .intro-ilustracao {
+        width: 175px;
+        height: 130px;
+    }
+
+    .intro-conteudo h1 {
+        font-size: 1.8rem;
+    }
+
+    .intro-conteudo p {
+        font-size: 0.88rem;
+    }
+
+    .intro-etiqueta {
+        font-size: 0.6rem;
+        letter-spacing: 1px;
+    }
+
+    .intro-botao {
+        padding: 12px 16px;
+        font-size: 0.82rem;
+        gap: 10px;
+    }
+
+    .intro-seta {
+        width: 32px;
+        height: 40px;
+    }
+
+    .intro-seta-esquerda {
+        left: 3px;
+    }
+
+    .intro-seta-direita {
+        right: 3px;
+    }
+}
