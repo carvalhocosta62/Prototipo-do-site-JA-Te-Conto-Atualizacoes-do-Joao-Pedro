@@ -1,0 +1,184 @@
+
+/* ==========================================
+   MUSHU — MASCOTE ANIMADO DO LOGIN
+   ========================================== */
+
+/* ---------- Palco do mascote ---------- */
+
+.pagina-login .mushu-palco {
+    width: min(100%, 340px);
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pagina-login .mushu-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    animation: mushu-flutuar 3s ease-in-out infinite;
+}
+
+/* ---------- Contornos do desenho ---------- */
+
+.pagina-login .mushu-svg .contorno {
+    stroke: #003b32;
+    stroke-width: 7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* ---------- Corpo, braços e mãos ---------- */
+
+.pagina-login .mushu-svg .braco-animado,
+.pagina-login .mushu-svg .patinha {
+    transform-box: view-box;
+    transform-origin: center;
+    transition:
+        transform 450ms ease,
+        opacity 250ms ease;
+}
+
+.pagina-login .mushu-svg .braco-contorno,
+.pagina-login .mushu-svg .mao-contorno,
+.pagina-login .mushu-svg .mushu-arm {
+    fill: #d7f5dc;
+    stroke: #003b32;
+    stroke-width: 7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* ---------- Posições das patinhas ---------- */
+
+.pagina-login .mushu-svg .patinha-esquerda {
+    transform-origin: 105px 405px;
+}
+
+.pagina-login .mushu-svg .patinha-direita {
+    transform-origin: 400px 405px;
+}
+
+/* ---------- Senha oculta: cobre os olhos ---------- */
+
+.pagina-login .mushu-svg[data-estado="oculta"] .patinha-esquerda {
+    transform: translate(55px, -145px) rotate(-8deg);
+}
+
+.pagina-login .mushu-svg[data-estado="oculta"] .patinha-direita {
+    transform: translate(-65px, -140px) rotate(8deg);
+}
+
+/* Braços conectados às mãos */
+
+.pagina-login .mushu-svg[data-estado="oculta"] #braco-esquerdo,
+.pagina-login .mushu-svg[data-estado="oculta"] #braco-direito {
+    transform: translateY(-30px);
+}
+
+/* ---------- Senha visível: Mushu espreita ---------- */
+
+.pagina-login .mushu-svg[data-estado="visivel"] .patinha-esquerda {
+    transform: translate(55px, -145px) rotate(-8deg);
+}
+
+.pagina-login .mushu-svg[data-estado="visivel"] .patinha-direita {
+    transform: translate(-10px, -100px) rotate(-15deg);
+}
+
+/* ---------- Olhos e expressões ---------- */
+
+.pagina-login .mushu-svg .olhos-abertos,
+.pagina-login .mushu-svg .olhos-fechados,
+.pagina-login .mushu-svg .bracos-leitura,
+.pagina-login .mushu-svg .bracos-rosto {
+    transition: opacity 250ms ease;
+}
+
+/* ---------- Campo de senha ---------- */
+
+.pagina-login .senha-container {
+    position: relative;
+}
+
+.pagina-login .senha-container input {
+    padding-right: 125px;
+}
+
+.pagina-login .botao-mostrar-senha {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    padding: 5px 8px;
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+    color: #27866f;
+    font: inherit;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.pagina-login .botao-mostrar-senha:hover {
+    color: #155b4d;
+}
+
+.pagina-login .botao-mostrar-senha:focus-visible {
+    outline: 2px solid #27866f;
+    outline-offset: 2px;
+}
+
+/* ---------- Animação de flutuação ---------- */
+
+@keyframes mushu-flutuar {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* ---------- Responsividade ---------- */
+
+@media (max-width: 700px) {
+    .pagina-login .mushu-palco {
+        width: min(190px, 65%);
+        margin-bottom: 10px;
+    }
+}
+
+/* ---------- Acessibilidade ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+    .pagina-login .mushu-svg {
+        animation: none;
+    }
+
+    .pagina-login .mushu-svg .braco-animado,
+    .pagina-login .mushu-svg .patinha,
+    .pagina-login .mushu-svg .olhos-abertos,
+    .pagina-login .mushu-svg .olhos-fechados,
+    .pagina-login .mushu-svg .bracos-leitura,
+    .pagina-login .mushu-svg .bracos-rosto {
+        transition: none;
+    }
+}
+
+
+/* Sobrancelhas: posição original */
+.mushu-svg .mushu-eyebrows {
+    transform: translateY(0);
+    transition: transform 350ms ease;
+}
+
+/* Quando cobre os olhos, as sobrancelhas sobem */
+.mushu-svg.is-covering .mushu-eyebrows {
+    transform: translateY(-35px);
+}
