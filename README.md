@@ -8,8 +8,10 @@
 
 2. Terminar a tela de perfil do usuário.
     - O botão de "+" à direita da estante.
+    - Trocar os emojis nos botões da estante por imagens, similar ao que foi feito com os botões do banner.
     - Polimento visual (talvez). **FEEDBACK DO DESIGN VISUAL DO BANNER JÁ FOI ENTREGUE A MIM**
-    - Trocar a foto de perfil padrão (/assets/placeholder.png) para algo mais condicente com o tema de plantas e/ou livros do site.
+
+    - Trocar a foto de perfil padrão (/assets/placeholder.png) para algo mais condicente com a temática de plantas e/ou livros do site.
        - (Tava pensando em botar o fursona do youtuber MyntyPaws kAkAKKAakKa (vejo depois o que eu vou fazer de fato)).
 
 -------------------------------------------------------------------
