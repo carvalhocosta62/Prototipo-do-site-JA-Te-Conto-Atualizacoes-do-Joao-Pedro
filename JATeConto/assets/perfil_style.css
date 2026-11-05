@@ -9,7 +9,7 @@ body.pagina-perfil {
 
     justify-content: center;
     padding: 30px 16px;
-    background-color: #FFFFFF;
+    background: linear-gradient(135deg, #FFFFFF, #d5fff6);
 }
 
 .caixa-perfil {
@@ -106,6 +106,10 @@ body.pagina-perfil {
 
 .lado-conta .texto-estante{
     color: #308d78;
+}
+
+.lado-conta hr {
+    color: #00B0A3;
 }
 
 /* Estatísticas pessoais */
