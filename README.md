@@ -5,8 +5,11 @@
 
 # Coisas ainda para fazer:
 1. Consertar o bug de textos muito grandes no banner do perfil do usuário.
+    - Implementar limite de caracteres com atributo html maxlength="". Somente após a implementação do campo de entrada.
 
-2. Terminar a tela de perfil do usuário.
+2. Implementar campo de entrada para o usuário mudar o texto do botão "Lendo" e da biografia sem alterar o código do arquivo html.
+
+3. Terminar a tela de perfil do usuário.
     - O botão de "+" à direita da estante.
     - Trocar os emojis nos botões da estante por imagens, similar ao que foi feito com os botões do banner.
     - Polimento visual (talvez). **FEEDBACK DO DESIGN VISUAL DO BANNER JÁ FOI ENTREGUE A MIM**
@@ -16,7 +19,15 @@
 
 -------------------------------------------------------------------
 
-# Últimas atualizações (03/11):
+# Atualizações de 04/11:
+1. O arquivo perfil_style.css foi alterado para impor um limite de tamanho nas sections texto-banner e biografia, para que textos gigantes não impurrem a seção adjacente para o lado. Infelizmente, texto grandes demais ainda ficam se sobrepondo de maneira feia em cima dos outros.
+
+**Notas pessoais sobre hoje.**
+Mano eu realmente não quero fazer isso, só por causa que o ENEM tá na virada do quarteirão, se fosse depois pra eu fazer isso eu taria era feliz, eu já tava programando o IRON RUIN em LUA no Pico-8 e eu queria tanto programar isso, mas TEM QUE SER AGORA??!? SÓ PRA MANTER O CALENDÁRIO DE ENTREGAS IGUAL AO DO 2º ANO??? PQ ELES TEM QUE ENTREGAR A MESMA COISA PELO QUE EU OUVI. E S P E R O  Q U E  N Ã O  S E J A
+
+-------------------------------------------------------------------
+
+# Atualizações de 03/11:
 **PRIMEIRO EU GOSTARIA DE PEDIR MIL DESCULPAS, O ARQUIVO style.css, AGORA RENOMEADO PARA login_style.css TAMBÉM É MENCIONADO NOS ARQUIVOS index.html E introducao.html. PORTANTO, OS ARQUIVOS QUEBRARAM, JÁ QUE AINDA ESTAVAM PROCURANDO O ARQUIVO PELO NOME ANTIGO. PARA CONSERTAR ESSE ERRO E PARA MANTER A CONSISTÊNCIA DOS NOMES, O ARQUIVO E SUAS TRÊS MENÇÕES FORAM RENOMEADOS PARA: index_login_introducao_style.css**
 
 1. Foi praticamente finalizada a página de perfil, agora só resta polir ela.
