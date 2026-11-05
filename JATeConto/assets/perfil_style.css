@@ -6,16 +6,18 @@ body.pagina-perfil {
 .pagina-perfil .tela-perfil {
     min-height: 100vh;
     display: flex;
-    align-items: center;
+
     justify-content: center;
     padding: 30px 16px;
-    background: linear-gradient(135deg, #e2f8f1, #f8fffc, #d4f2e8);
+    background-color: #FFFFFF;
 }
 
 .caixa-perfil {
     width: 100%;
     max-width: 950px;
     min-height: 540px;
+    max-height: 580px;
+    margin-top: 15px;
     overflow: hidden;
     background: #fff;
     border-radius: 28px;
@@ -103,7 +105,7 @@ body.pagina-perfil {
 }
 
 .lado-conta .texto-estante{
-    margin-top: 30px;
+    color: #308d78;
 }
 
 /* Estatísticas pessoais */
@@ -124,14 +126,23 @@ body.pagina-perfil {
     margin-left: 40px;
     margin-right: 40px;
     
-    background-color: #B0F3B0;
+    background: linear-gradient(135deg, #B0F3CC, #40BFA3);
     border-radius: 20px;
 
     min-height: 100px;
     min-width: 200px;
 }
 
-/* Estante */
+.estatistica b{
+    color: #287564;
+}
+
+.estatistica h2 {
+    color: #004040;
+    font-weight: bold;
+}
+
+/* Botão da estante */
 
 .estatisticas .categoria {
     display: flex;
@@ -143,10 +154,10 @@ body.pagina-perfil {
     margin-right: 40px;
     
     max-width: 200px;
-    color: #074B32;
-    background-color: #B0F3B0;
+    color: #287564;
+    background: linear-gradient(135deg, #B0F3CC, #40BFA3);
     border-radius: 20px;
-    border-color: #40BFA3;
+    border-color: #B0F3CC;
     border-style: double;
 
     min-height: 100px;
@@ -156,7 +167,7 @@ body.pagina-perfil {
 /* Botão das configurações de conta */
 
 .configuracoes button{
-    color: #AAAAAA;
+    color: #BBBBBB;
     background-color: #FFFFFF;
     border-style: none;
 }
