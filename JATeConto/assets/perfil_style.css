@@ -50,6 +50,8 @@ body.pagina-perfil {
 
 .texto-banner {
     margin-right: 10px;
+    max-width: 400px;
+    max-height: 500px;
 }
 
 .texto-banner h2{
@@ -70,6 +72,8 @@ body.pagina-perfil {
 
 .biografia {
     color: #D8FFD8;
+    max-width: 300px;
+    max-height: 50px;
 }
 
 /* Botões do banner */
@@ -157,7 +161,7 @@ body.pagina-perfil {
     border-style: none;
 }
 
-/* Emojis dos botões */
+/* "Emojis" dos botões */
 
 .botao-imagem {
     max-width: 25px;
