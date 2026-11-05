@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Já Te Conto | Cadastro</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/cadastro_style.css">
+</head>
+
+<body class="pagina-login">
+
+    <main class="tela-acesso">
+
+        <section class="caixa-acesso">
+
+            <div class="lado-capitu">
+                
+                <h2>Seja bem vindo!</h2>
+
+                <p class="texto-apoio">
+                    Não se sinta mal, aceitamos todo tipo de leitor!
+                </p>
+
+                <form id="formLogin">
+
+                    <div class="campo-acesso">
+                        <label for="email">Digite seu nome:</label>
+                        <input
+                            type="name"
+                            id="name"
+                            name="name"
+                            placeholder="Seu nome"
+                            autocomplete="name"
+                            required>
+                    </div>
+
+                    <div class="campo-acesso">
+                        <label for="email">Qual seu gênero:</label>
+                        <input
+                            type="gender"
+                            id="gender"
+                            name="gender"
+                            placeholder="Gênero"
+                            autocomplete="gender"
+                            required>
+                    </div>
+
+                    <div class="campo-acesso">
+                        <label for="email">Quantos anos você tem:</label>
+                        <input
+                            type="age"
+                            id="age"
+                            name="age"
+                            placeholder="Idade"
+                            autocomplete="age"
+                            required>
+                    </div>
+
+                    <div class="campo-acesso">
+                        <label for="email">Número de telefone (com DDD):</label>
+                        <input
+                            type="phonenumber"
+                            id="phonenumber"
+                            name="phonenumber"
+                            placeholder="Telefone"
+                            autocomplete="phonenumber"
+                            required>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="lado-formulario">
+
+                <form id="formLogin">
+
+                    <div class="campo-acesso">
+                        <label for="email">Crie o seu e-mail:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="voce@exemplo.com"
+                            autocomplete="email"
+                            required>
+                    </div>
+
+                    <div class="campo-acesso">
+                        <label for="senha">Crie a sua senha (Mínimo de 8 caracteres):</label>
+                        <input
+                            type="password"
+                            id="senha"
+                            name="senha"
+                            placeholder="Digite sua senha"
+                            autocomplete="current-password"
+                            required>
+                    </div>
+
+                    <div class="campo-acesso">
+                        <label for="senha">Digite a sua senha novamente:</label>
+                        <input
+                            type="password"
+                            id="senha"
+                            name="senha"
+                            placeholder="Digite sua senha"
+                            autocomplete="current-password"
+                            required>
+                    </div>
+
+                    <button class="botao-acesso" type="submit">
+                        Criar conta
+                    </button>
+
+                    <h1>Já Te Conto</h1>
+
+                    <p id="mensagemLogin" role="status"></p>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.getElementById("formLogin").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            document.getElementById("mensagemLogin").textContent =
+                "A tela está pronta! O acesso real será configurado quando conectarmos a autenticação.";
+        });
+    </script>
+
+</body>
+</html>

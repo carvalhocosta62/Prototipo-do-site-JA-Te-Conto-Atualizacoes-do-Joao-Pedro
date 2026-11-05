@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Já Te Conto | Entrar</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/index_introducao_login_style.css">
+    <link rel="stylesheet" href="assets/mushu.css">
+</head>
+
+<body class="pagina-login">
+
+    <main class="tela-acesso">
+
+        <section class="caixa-acesso">
+
+            <div class="lado-capitu">
+    <div class="mushu-palco" data-mushu></div>
+
+    <h1>Já Te Conto</h1>
+
+    <p>
+        Psiu… tenho uma história pra te contar.
+    </p>
+</div>
+
+            <div class="lado-formulario">
+
+                <h2>Boas-vindas!</h2>
+
+                <p class="texto-apoio">
+                    Entre na sua conta para continuar lendo.
+                </p>
+
+                <form id="formLogin">
+
+                    <div class="campo-acesso">
+                        <label for="email">Seu e-mail</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="voce@exemplo.com"
+                            autocomplete="email"
+                            required>
+                    </div>
+
+                    <div class="campo-acesso">
+                        <label for="senha">Sua senha</label>
+                        <div class="senha-container">
+    <input
+        type="password"
+        id="senha"
+        name="senha"
+        placeholder="Digite sua senha"
+        autocomplete="current-password"
+        required>
+
+    <button
+        type="button"
+        id="alternarSenha"
+        class="botao-mostrar-senha"
+        aria-label="Mostrar senha"
+        aria-pressed="false">
+        Mostrar senha
+    </button>
+</div>
+                    </div>
+
+                    <button class="botao-acesso" type="submit">
+                        Entrar
+                    </button>
+
+                    <p id="mensagemLogin" role="status"></p>
+
+                </form>
+
+                <p class="link-alternar">
+                    Ainda não tem conta?
+                    <a href="cadastro.html">Criar conta</a>
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.getElementById("formLogin").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            document.getElementById("mensagemLogin").textContent =
+                "A tela está pronta! O acesso real será configurado quando conectarmos a autenticação.";
+        });
+    </script>
+
+<script src="assets/js/mushu.js"></script>
+</body>
+</html>
