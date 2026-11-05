@@ -13,13 +13,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
           rel="stylesheet">
 
+    <link rel="stylesheet" href="assets/index_introducao_login_style.css">
     <link rel="stylesheet" href="assets/perfil_style.css">
 
 </head>
 <body class="pagina-perfil">
     
     <header>
-        <!-- NavBar (Bota depois em todas as páginas) -->
+        <nav class="navbar navbar-expand-lg navbar-light cabecalho-verde-agua">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">Já Te Conto</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="#">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Serviços</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+        <button class="btn btn-outline-white bg-white text-muted" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
     </header>
 
     <main class="tela-perfil">
@@ -33,7 +61,7 @@
                 </section>
                 
                 <section class="texto-banner">
-                    <h2>Nome da Conta</h2>
+                    <h2><b>Nome da Conta</b></h2>
 
                     <u>endereço@gmail.com</u>
                     <br>
@@ -54,8 +82,9 @@
 
             <div class="lado-conta">
                 
-                <h5>Estatísticas pessoais</h5>
-                
+                <h5 class="texto-estante"><b>Estatísticas pessoais</b></h5>
+                <hr>
+
                 <section class="estatisticas">
                     
                     <section class="estatistica">
@@ -75,8 +104,10 @@
 
                 </section>
                 
-                <h5 class="texto-estante">Minha estante</h5>
-                
+                <br>
+                <h5 class="texto-estante"><b>Minha estante</b></h5>
+                <hr>
+
                 <section class="estatisticas">
                     
                     <button class="categoria">
@@ -101,10 +132,8 @@
             <div class="configuracoes">
                 <button>
                     <h5>
-                        <b>
-                            <img src="assets/ButtonEmoji3.png" alt="ButtonEmoji3" class="botao-imagem">
-                            Configurações da conta
-                        </b>
+                        <img src="assets/ButtonEmoji3.png" alt="ButtonEmoji3" class="botao-imagem">
+                        Configurações da conta
                     </h5>
                 </button>
             </div>
