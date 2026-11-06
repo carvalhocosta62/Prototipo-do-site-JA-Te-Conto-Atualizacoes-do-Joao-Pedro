@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sobre | Já Te Conto</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fonte Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS da página Sobre -->
+    <link rel="stylesheet" href="assets/sobre.css">
+</head>
+
+<body class="pagina-sobre">
+
+    <!-- =====================================
+         MENU PRINCIPAL
+    ====================================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark cabecalho-verde-agua">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                Já Te Conto
+            </a>
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Abrir menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="livros.html">Livros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="sobre.html">Sobre</a>
+                    </li>
+
+                </ul>
+
+                <a class="btn btn-light botao-perfil" href="login.html">
+                    Meu perfil
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <main>
+
+        <!-- =====================================
+             APRESENTAÇÃO DO PROJETO
+        ====================================== -->
+
+        <section class="sobre-hero">
+
+            <div class="container sobre-hero-conteudo">
+
+                <div class="sobre-texto">
+
+                    <span class="etiqueta-sobre">
+                        SOBRE A PLATAFORMA
+                    </span>
+
+                    <h1>
+                        Conheça o
+                        <span>Já Te Conto.</span>
+                    </h1>
+
+                    <p>
+                        O Já Te Conto é uma plataforma digital desenvolvida
+                        para incentivar o hábito da leitura e facilitar o
+                        acesso à literatura. Nosso propósito é proporcionar
+                        um ambiente organizado e acessível, no qual os
+                        leitores possam explorar diferentes obras, descobrir
+                        novos autores e acompanhar suas jornadas de leitura.
+                    </p>
+
+                    <a href="#perguntas" class="botao-explorar">
+                        Consulte nossas perguntas frequentes
+                    </a>
+
+                </div>
+
+
+                <!-- CARTÃO INSTITUCIONAL -->
+
+                <aside class="sobre-destaque">
+
+                    <h2>Nosso propósito</h2>
+
+                    <p>
+                        Promover o acesso à leitura e incentivar a
+                        descoberta de novas experiências literárias.
+                    </p>
+
+                    <div class="destaque-linha"></div>
+
+                    <div class="destaque-itens">
+
+                        <span>Acesso gratuito à plataforma</span>
+
+                        <span>Conteúdo organizado por categorias</span>
+
+                        <span>Incentivo à formação de leitores</span>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             PERGUNTAS FREQUENTES - FAQ
+        ====================================== -->
+
+        <section class="faq-principal" id="perguntas">
+
+            <div class="container faq-container">
+
+                <!-- TÍTULO -->
+
+                <header class="faq-introducao">
+
+                    <span class="etiqueta-sobre">
+                        CENTRAL DE INFORMAÇÕES
+                    </span>
+
+                    <h2>
+                        Perguntas <span>frequentes</span>
+                    </h2>
+
+                    <p>
+                        Consulte as principais dúvidas sobre o funcionamento
+                        e os recursos disponíveis na plataforma Já Te Conto.
+                    </p>
+
+                </header>
+
+
+
+                <!-- CAMPO DE PESQUISA -->
+
+                <div class="faq-busca">
+
+                    <label for="buscarPergunta" class="visually-hidden">
+                        Buscar uma pergunta
+                    </label>
+
+                    <input
+                        type="search"
+                        id="buscarPergunta"
+                        placeholder="Digite sua dúvida ou palavra-chave..."
+                        autocomplete="off"
+                    >
+
+                    <button
+                        type="button"
+                        id="limparBusca"
+                        class="limpar-busca"
+                        aria-label="Limpar busca">
+
+                        ×
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- FILTROS DOS TÓPICOS -->
+
+                <div class="faq-filtros" role="group" aria-label="Filtrar perguntas por tópico">
+
+                    <button
+                        class="filtro-topico ativo"
+                        type="button"
+                        data-filtro="todos"
+                        aria-pressed="true">
+
+                        Todas
+
+                    </button>
+
+                    <button
+                        class="filtro-topico"
+                        type="button"
+                        data-filtro="plataforma"
+                        aria-pressed="false">
+
+                        Plataforma
+
+                    </button>
+
+                    <button
+                        class="filtro-topico"
+                        type="button"
+                        data-filtro="livros"
+                        aria-pressed="false">
+
+                        Livros
+
+                    </button>
+
+                    <button
+                        class="filtro-topico"
+                        type="button"
+                        data-filtro="conta"
+                        aria-pressed="false">
+
+                        Conta
+
+                    </button>
+
+                    <button
+                        class="filtro-topico"
+                        type="button"
+                        data-filtro="suporte"
+                        aria-pressed="false">
+
+                        Suporte
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- CONTADOR DE PERGUNTAS -->
+
+                <p class="faq-contagem" id="contadorPerguntas" aria-live="polite">
+                    Exibindo 11 perguntas
+                </p>
+
+
+
+                <!-- LISTA DOS TÓPICOS -->
+
+                <div class="faq-lista">
+
+
+                    <!-- =====================================
+                         TÓPICO 1 - PLATAFORMA
+                    ====================================== -->
+
+                    <section class="faq-grupo" data-categoria="plataforma">
+
+                        <div class="faq-titulo-grupo">
+
+                            <span class="numero-grupo">01</span>
+
+                            <div>
+
+                                <span class="grupo-etiqueta">
+                                    INFORMAÇÕES GERAIS
+                                </span>
+
+                                <h3>Plataforma</h3>
+
+                                <p>
+                                    Informações sobre o projeto e seu funcionamento.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="faq-perguntas">
+
+
+                            <!-- PERGUNTA 1.1 -->
+
+                            <article class="faq-item">
+
+                                <h4>
+
+                                    <button class="faq-pergunta" type="button" aria-expanded="false">
+
+                                        <span>O que é o Já Te Conto?</span>
+
+                                        <span class="faq-sinal" aria-hidden="true">+</span>
+
+                                    </button>
+
+                                </h4>
+
+                                <div class="faq-resposta" hidden>
+
+                                    <p>
+                                        O Já Te Conto é uma plataforma digital criada
+                                        para incentivar o hábito da leitura e tornar
+                                        o acesso aos livros mais simples e acessível.
+                                        Nosso objetivo é aproximar as pessoas do
+                                        universo literário, oferecendo um espaço onde
+                                        todos possam descobrir novas histórias e
+                                        acompanhar suas jornadas de leitura.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <!-- PERGUNTA 1.2 -->
+
+                            <article class="faq-item">
+
+                                <h4>
+
+                                    <button class="faq-pergunta" type="button" aria-expanded="false">
+
+                                        <span>O acesso à plataforma é gratuito?</span>
+
+                                        <span class="faq-sinal" aria-hidden="true">+</span>
+
+                                    </button>
+
+                                </h4>
+
+                                <div class="faq-resposta" hidden>
+
+                                    <p>
+                                        Sim! O Já Te Conto é uma plataforma gratuita.
+                                        Queremos democratizar o acesso à leitura,
+                                        permitindo que todos possam explorar o catálogo
+                                        e aproveitar os recursos disponíveis sem
+                                        precisar pagar por isso.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <!-- PERGUNTA 1.3 -->
+
+                            <article class="faq-item">
+
+                                <h4>
+
+                                    <button class="faq-pergunta" type="button" aria-expanded="false">
+
+                                        <span>
+                                            É necessário ter experiência ou hábito
+                                            de leitura para utilizar esse site?
+                                        </span>
+
+                                        <span class="faq-sinal" aria-hidden="true">+</span>
+
+                                    </button>
+
+                                </h4>
+
+                                <div class="faq-resposta" hidden>
+
+                                    <p>
+                                        Não! O Já Te Conto foi desenvolvido para todos
+                                        os tipos de leitores, desde aqueles que estão
+                                        começando a ler até os que já possuem o hábito
+                                        da leitura. Aqui, cada pessoa pode descobrir
+                                        seu próprio ritmo e encontrar histórias que
+                                        despertem seu interesse.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- =====================================
+                         TÓPICO 2 - LIVROS
+                    ====================================== -->
+
+                    <section class="faq-grupo" data-categoria="livros">
+
+                        <div class="faq-titulo-grupo">
+
+                            <span class="numero-grupo">02</span>
+
+                            <div>
+
+                                <span class="grupo-etiqueta">
+                                    CATÁLOGO LITERÁRIO
+                                </span>
+
+                                <h3>Livros</h3>
+
+                                <p>
+                                    Informações sobre as obras disponibilizadas.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="faq-perguntas">
+
+
+                            <!-- PERGUNTA 2.1 -->
+
+                            <article class="faq-item">
+
+                                <h4>
+
+                                    <button class="faq-pergunta" type="button" aria-expanded="false">
+
+                                        <span>Como encontrar um livro na plataforma?</span>
+
+                                        <span class="faq-sinal" aria-hidden="true">+</span>
+
+                                    </button>
+
+                                </h4>
+
+                                <div class="faq-resposta" hidden>
+
+                                    <p>
+                                        Você pode explorar o catálogo e procurar livros
+                                        de acordo com suas preferências. Utilize as
+                                        informações disponíveis, como título, autor
+                                        e gênero literário, para encontrar histórias
+                                        que combinem com você.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <!-- PERGUNTA 2.2 -->
+
+                            <article class="faq-item">
+
+                                <h4>
+
+                                    <button class="faq-pergunta" type="button" aria-expanded="false">
+
+                                        <span>Todos os livros disponibilizados são gratuitos?</span>
+
+                                        <span class="faq-sinal" aria-hidden="true">+</span>
+
+                                    </button>
+
+                                </h4>
+
+                                <div class="faq-resposta" hidden>
+
+                                    <p>
+                                        Sim! Os livros disponibilizados na plataforma
+                                        podem ser acessados gratuitamente. Nosso
+                                        propósito é facilitar o contato dos usuários
+                                        com a literatura, sem que o custo seja uma
+                                        barreira para a leitura.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <!-- PERGUNTA 2.3 -->
+
+                            <article class="faq-item">
+
+                                <h4>
+
+                                    <button class="faq-pergunta" type="button" aria-expanded="false">
+
+                                        <span>Qual é a organização dos livros?</span>
+
+                                        <span class="faq-sinal" aria-hidden="true">+</span>
+
+                                    </button>
+
+                                </h4>
+
+                                <div class="faq-resposta" hidden>
+
+                                    <p>
+                                        Os livros são organizados de acordo com
+                                        informações como título, autor, editora,
+                                        gênero literário e faixa etária recomendada.
+                                        Essa organização facilita a busca e permite
+                                        que cada usuário encontre obras de acordo
+                                        com seus interesses.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- =====================================
+                         TÓPICO 3 - CONTA
+                    ====================================== -->
+
+                    <section class="faq-grupo" data-categoria="conta">
+
+                        <div class="faq-titulo-grupo">
+
+                            <span class="numero-grupo">03</span>
+
+                            <div>
+
+                                <span class="grupo-etiqueta">
+                                    CADASTRO E PRIVACIDADE
+                                </span>
+
+                                <h3>Conta</h3>
+
+                                <p>
+                                    Informações sobre cadastro e dados pessoais.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="faq-perguntas">
+
+
+                            <!-- PERGUNTA 3.1 -->
+
+                            <article class="faq-item">
+
+                                <h4>
+
+                                    <button class="faq-pergunta" type="button" aria-expanded="false">
+
+                                        <span>
+                                            É necessário criar uma conta para utilizar
+                                            a plataforma?
+                                        </span>
+
+                                        <span class="faq-sinal" aria-hidden="true">+</span>
+
+                                    </button>
+
+                                </h4>
+
+                                <div class="faq-resposta" hidden>
+
+                                    <p>
+                                        Sim! A criação de uma conta permite que você
+                                        tenha acesso aos recursos personalizados do
+                                        Já Te Conto, como o acompanhamento do seu
+                                        progresso e a organização das suas leituras.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <!-- PERGUNTA 3.2 -->
+
+                            <article class="faq-item">
+
+                                <h4>
+
+                                    <button class="faq-pergunta" type="button" aria-expanded="false">
+
+                                        <span>Meus dados pessoais ficam protegidos?</span>
+
+                                        <span class="faq-sinal" aria-hidden="true">+</span>
+
+                                    </button>
+
+                                </h4>
+
+                                <div class="faq-resposta" hidden>
+
+                                    <p>
+                                        A privacidade dos nossos usuários é importante.
+                                        As informações fornecidas no cadastro devem
+                                        ser utilizadas apenas para as finalidades
+                                        relacionadas ao funcionamento da plataforma,
+                                        seguindo os princípios de proteção de dados
+                                        da Lei Geral de Proteção de Dados (LGPD).
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <!-- PERGUNTA 3.3 -->
+
+                            <article class="faq-item">
+
+                                <h4>
+
+                                    <button class="faq-pergunta" type="button" aria-expanded="false">
+
+                                        <span>Posso alterar meus dados cadastrais?</span>
+
+                                        <span class="faq-sinal" aria-hidden="true">+</span>
+
+                                    </button>
+
+                                </h4>
+
+                                <div class="faq-resposta" hidden>
+
+                                    <p>
+                                        Sim! Caso precise atualizar alguma informação,
+                                        você poderá realizar alterações nos seus
+                                        dados cadastrais por meio das opções de
+                                        gerenciamento da sua conta, quando disponíveis.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- =====================================
+                         TÓPICO 4 - SUPORTE
+                    ====================================== -->
+
+                    <section class="faq-grupo" data-categoria="suporte">
+
+                        <div class="faq-titulo-grupo">
+
+                            <span class="numero-grupo">04</span>
+
+                            <div>
+
+                                <span class="grupo-etiqueta">
+                                    ATENDIMENTO E CONTRIBUIÇÕES
+                                </span>
+
+                                <h3>Suporte</h3>
+
+                                <p>
+                                    Orientações para dúvidas, sugestões e problemas.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="faq-perguntas">
+
+
+                            <!-- PERGUNTA 4.1 -->
+
+                            <article class="faq-item">
+
+                                <h4>
+
+                                    <button class="faq-pergunta" type="button" aria-expanded="false">
+
+                                        <span>Como posso contribuir com o projeto?</span>
+
+                                        <span class="faq-sinal" aria-hidden="true">+</span>
+
+                                    </button>
+
+                                </h4>
+
+                                <div class="faq-resposta" hidden>
+
+                                    <p>
+                                        Existem várias formas de contribuir! Você
+                                        pode utilizar e divulgar a plataforma,
+                                        compartilhar sugestões de livros, indicar
+                                        melhorias e enviar feedbacks para nossa equipe.
+                                        Toda contribuição é importante para o crescimento
+                                        do Já Te Conto e para incentivar cada vez mais
+                                        pessoas a desenvolverem o hábito da leitura.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <!-- PERGUNTA 4.2 -->
+
+                            <article class="faq-item">
+
+                                <h4>
+
+                                    <button class="faq-pergunta" type="button" aria-expanded="false">
+
+                                        <span>
+                                            O que faço se encontrar um erro na plataforma?
+                                        </span>
+
+                                        <span class="faq-sinal" aria-hidden="true">+</span>
+
+                                    </button>
+
+                                </h4>
+
+                                <div class="faq-resposta" hidden>
+
+                                    <p>
+                                        Caso encontre algum erro ou dificuldade durante
+                                        a utilização do site, recomendamos que entre
+                                        em contato com nossa equipe, informando o
+                                        problema encontrado e, se possível, enviando
+                                        uma descrição ou captura de tela. Assim,
+                                        poderemos identificar a situação e trabalhar
+                                        para solucioná-la.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+
+                <!-- MENSAGEM QUANDO NÃO HOUVER RESULTADOS -->
+
+                <div class="faq-sem-resultado" id="semResultado" hidden>
+
+                    <h3>Nenhuma pergunta encontrada</h3>
+
+                    <p>
+                        Não foram encontradas perguntas correspondentes
+                        à sua pesquisa. Tente utilizar outros termos
+                        ou selecionar um dos tópicos disponíveis.
+                    </p>
+
+                    <button type="button" id="verTodas">
+                        Visualizar todas as perguntas
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             CHAMADA FINAL
+        ====================================== -->
+
+        <section class="sobre-final">
+
+            <div class="container">
+
+                <h2>
+                    Descubra novas possibilidades por meio da leitura.
+                </h2>
+
+                <p>
+                    Explore nosso catálogo e encontre obras que
+                    correspondam aos seus interesses.
+                </p>
+
+                <a href="livros.html">
+                    Explorar livros
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================
+         RODAPÉ
+    ====================================== -->
+
+    <footer class="sobre-rodape">
+
+        <a href="index.html">
+            Já Te Conto
+        </a>
+
+        <p>
+            Incentivando novas histórias e o prazer da leitura.
+        </p>
+
+        <span>
+            © 2026 Já Te Conto. Todos os direitos reservados.
+        </span>
+
+    </footer>
+
+
+
+    <!-- BOOTSTRAP JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- JAVASCRIPT DO FAQ -->
+
+    <script src="assets/js/sobre.js"></script>
+
+</body>
+
+</html>

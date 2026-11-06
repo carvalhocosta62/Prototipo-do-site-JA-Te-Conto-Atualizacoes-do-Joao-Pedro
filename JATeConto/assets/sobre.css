@@ -1,0 +1,797 @@
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+======================================== */
+
+.pagina-sobre {
+    margin: 0;
+    background: #f4fbf8;
+    color: #24483e;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pagina-sobre * {
+    box-sizing: border-box;
+}
+
+.cabecalho-verde-agua {
+    background-color: #40BFA3 !important;
+}
+
+.pagina-sobre .navbar {
+    padding: 15px 0;
+    box-shadow: 0 3px 15px rgba(35, 117, 98, 0.08);
+}
+
+.pagina-sobre .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.pagina-sobre .nav-link {
+    margin: 0 5px;
+    font-weight: 400;
+}
+
+.pagina-sobre .nav-link:hover {
+    opacity: 0.8;
+}
+
+.pagina-sobre .navbar .btn-light {
+    color: #267d69;
+    font-weight: 600;
+    border: none;
+}
+
+
+/* ========================================
+   APRESENTAÇÃO DA PLATAFORMA
+======================================== */
+
+.sobre-hero {
+    min-height: 510px;
+    padding: 75px 0;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(120deg, #e5f6ee, #f8fcf9);
+}
+
+.sobre-hero-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.sobre-texto {
+    flex: 1.4;
+    max-width: 680px;
+}
+
+.etiqueta-sobre {
+    color: #399b7e;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+.sobre-texto h1 {
+    margin: 18px 0 25px;
+    color: #24483e;
+    font-size: clamp(2.3rem, 4vw, 3.2rem);
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.sobre-texto h1 span {
+    color: #35a985;
+}
+
+.sobre-texto p {
+    margin-bottom: 28px;
+    color: #62776e;
+    font-size: 0.95rem;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.botao-explorar {
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 11px;
+    background: #40BFA3;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.botao-explorar:hover {
+    background: #299d83;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   CARTÃO DE DESTAQUE
+======================================== */
+
+.sobre-destaque {
+    flex: 0.8;
+    width: 100%;
+    max-width: 350px;
+    padding: 32px;
+    border: 1px solid #d9eee4;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 30px rgba(39, 111, 88, 0.07);
+}
+
+.sobre-destaque h2 {
+    margin-bottom: 14px;
+    color: #246b58;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.sobre-destaque p {
+    color: #71847c;
+    font-size: 0.88rem;
+    line-height: 1.8;
+}
+
+.destaque-linha {
+    width: 55px;
+    height: 3px;
+    margin: 20px 0;
+    border-radius: 5px;
+    background: #40BFA3;
+}
+
+.destaque-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.destaque-itens span {
+    padding-left: 15px;
+    border-left: 3px solid #40BFA3;
+    color: #49685b;
+    font-size: 0.82rem;
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   SEÇÃO PRINCIPAL DO FAQ
+======================================== */
+
+.faq-principal {
+    padding: 80px 0 90px;
+    background: #f4fbf8;
+}
+
+.faq-container {
+    max-width: 1000px;
+}
+
+.faq-introducao {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.faq-introducao h2 {
+    margin: 14px 0;
+    color: #24483e;
+    font-size: clamp(1.9rem, 4vw, 2.5rem);
+    font-weight: 700;
+}
+
+.faq-introducao h2 span {
+    color: #35a985;
+}
+
+.faq-introducao p {
+    max-width: 620px;
+    margin: auto;
+    color: #71847c;
+    font-size: 0.93rem;
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   CAMPO DE PESQUISA
+======================================== */
+
+.faq-busca {
+    position: relative;
+    max-width: 680px;
+    margin: 0 auto 25px;
+}
+
+.faq-busca input {
+    width: 100%;
+    padding: 16px 50px 16px 20px;
+    border: 1px solid #d5e9df;
+    border-radius: 13px;
+    outline: none;
+    background: #ffffff;
+    color: #24483e;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88rem;
+    box-shadow: 0 5px 18px rgba(39, 111, 88, 0.04);
+    transition: 0.2s ease;
+}
+
+.faq-busca input::placeholder {
+    color: #9aada4;
+}
+
+.faq-busca input:focus {
+    border-color: #40BFA3;
+    box-shadow: 0 0 0 4px rgba(64, 191, 163, 0.12);
+}
+
+.limpar-busca {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    color: #71847c;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.limpar-busca:hover {
+    background: #e5f6ee;
+    color: #27866f;
+}
+
+
+/* ========================================
+   FILTROS DOS TÓPICOS
+======================================== */
+
+.faq-filtros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.filtro-topico {
+    padding: 10px 20px;
+    border: 1px solid #d6e9df;
+    border-radius: 25px;
+    background: #ffffff;
+    color: #58766a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.filtro-topico:hover {
+    border-color: #40BFA3;
+    color: #27866f;
+}
+
+.filtro-topico.ativo {
+    border-color: #40BFA3;
+    background: #40BFA3;
+    color: #ffffff;
+    box-shadow: 0 5px 14px rgba(64, 191, 163, 0.18);
+}
+
+
+/* ========================================
+   CONTADOR DE PERGUNTAS
+======================================== */
+
+.faq-contagem {
+    margin: 0 0 25px;
+    color: #82958b;
+    font-size: 0.78rem;
+    text-align: right;
+}
+
+
+/* ========================================
+   ORGANIZAÇÃO DOS TÓPICOS
+======================================== */
+
+.faq-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.faq-grupo {
+    width: 100%;
+}
+
+.faq-titulo-grupo {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dcece3;
+}
+
+.numero-grupo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+    background: #e0f4eb;
+    color: #299d83;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.grupo-etiqueta {
+    color: #399b7e;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+
+.faq-titulo-grupo h3 {
+    margin: 5px 0;
+    color: #246b58;
+    font-size: 1.45rem;
+    font-weight: 700;
+}
+
+.faq-titulo-grupo p {
+    margin: 0;
+    color: #81938a;
+    font-size: 0.82rem;
+}
+
+
+/* ========================================
+   PERGUNTAS
+======================================== */
+
+.faq-perguntas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.faq-item {
+    overflow: hidden;
+    border: 1px solid #deeee5;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(39, 111, 88, 0.035);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faq-item:hover {
+    border-color: #a9ddc8;
+}
+
+.faq-item.aberta {
+    border-color: #40BFA3;
+    box-shadow: 0 7px 22px rgba(39, 111, 88, 0.08);
+}
+
+.faq-item h4 {
+    margin: 0;
+    font-size: inherit;
+}
+
+.faq-pergunta {
+    width: 100%;
+    min-height: 65px;
+    padding: 19px 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border: none;
+    background: transparent;
+    color: #38574f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.faq-pergunta:hover {
+    color: #27866f;
+}
+
+.faq-pergunta:focus-visible {
+    outline: 3px solid rgba(64, 191, 163, 0.35);
+    outline-offset: -4px;
+}
+
+.faq-sinal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #e8f7f0;
+    color: #299d83;
+    font-size: 1.25rem;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.faq-item.aberta .faq-sinal {
+    background: #40BFA3;
+    color: #ffffff;
+}
+
+
+/* ========================================
+   RESPOSTAS
+======================================== */
+
+.faq-resposta {
+    padding: 0 23px 22px;
+    animation: aparecer-resposta 0.25s ease;
+}
+
+.faq-resposta p {
+    margin: 0;
+    padding-top: 15px;
+    border-top: 1px solid #e9f2ed;
+    color: #71847c;
+    font-size: 0.86rem;
+    font-weight: 400;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+@keyframes aparecer-resposta {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ========================================
+   MENSAGEM SEM RESULTADOS
+======================================== */
+
+.faq-sem-resultado {
+    margin-top: 25px;
+    padding: 45px 25px;
+    border: 1px solid #deeee5;
+    border-radius: 18px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.faq-sem-resultado h3 {
+    margin-bottom: 12px;
+    color: #246b58;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.faq-sem-resultado p {
+    max-width: 500px;
+    margin: 0 auto 22px;
+    color: #71847c;
+    font-size: 0.85rem;
+    line-height: 1.8;
+}
+
+.faq-sem-resultado button {
+    padding: 11px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #40BFA3;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.faq-sem-resultado button:hover {
+    background: #299d83;
+}
+
+
+/* ========================================
+   CHAMADA FINAL
+======================================== */
+
+.sobre-final {
+    padding: 65px 20px;
+    background: linear-gradient(120deg, #e2f5eb, #effaf4);
+    text-align: center;
+}
+
+.sobre-final h2 {
+    max-width: 700px;
+    margin: 0 auto 15px;
+    color: #24483e;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.sobre-final p {
+    margin-bottom: 25px;
+    color: #71847c;
+    font-size: 0.9rem;
+}
+
+.sobre-final a {
+    display: inline-block;
+    padding: 13px 28px;
+    border-radius: 11px;
+    background: #40BFA3;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.sobre-final a:hover {
+    background: #299d83;
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   RODAPÉ
+======================================== */
+
+.sobre-rodape {
+    padding: 35px 20px;
+    background: #e4f5ed;
+    color: #71847c;
+    text-align: center;
+}
+
+.sobre-rodape a {
+    color: #27866f;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.sobre-rodape p {
+    margin: 10px 0;
+    font-size: 0.85rem;
+}
+
+.sobre-rodape span {
+    font-size: 0.75rem;
+}
+
+
+/* ========================================
+   RESPONSIVIDADE - TABLETS
+======================================== */
+
+@media (max-width: 900px) {
+
+    .sobre-hero-conteudo {
+        gap: 35px;
+    }
+
+    .sobre-destaque {
+        max-width: 300px;
+        padding: 25px;
+    }
+
+    .sobre-texto h1 {
+        font-size: 2.5rem;
+    }
+
+}
+
+
+/* ========================================
+   RESPONSIVIDADE - CELULARES
+======================================== */
+
+@media (max-width: 700px) {
+
+    /* Apresentação */
+
+    .sobre-hero {
+        padding: 50px 0;
+    }
+
+    .sobre-hero-conteudo {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 35px;
+    }
+
+    .sobre-texto {
+        max-width: none;
+    }
+
+    .sobre-texto h1 {
+        font-size: 2.2rem;
+    }
+
+    .sobre-texto p {
+        font-size: 0.88rem;
+        text-align: left;
+    }
+
+    .sobre-destaque {
+        max-width: none;
+    }
+
+
+    /* FAQ */
+
+    .faq-principal {
+        padding: 55px 0 65px;
+    }
+
+    .faq-introducao {
+        margin-bottom: 30px;
+    }
+
+    .faq-introducao p {
+        font-size: 0.85rem;
+    }
+
+    .faq-filtros {
+        gap: 8px;
+    }
+
+    .filtro-topico {
+        padding: 9px 15px;
+        font-size: 0.75rem;
+    }
+
+    .faq-contagem {
+        text-align: center;
+    }
+
+    .faq-lista {
+        gap: 35px;
+    }
+
+    .faq-titulo-grupo {
+        gap: 14px;
+    }
+
+    .numero-grupo {
+        width: 45px;
+        height: 45px;
+        border-radius: 12px;
+        font-size: 0.9rem;
+    }
+
+    .faq-titulo-grupo h3 {
+        font-size: 1.25rem;
+    }
+
+    .faq-titulo-grupo p {
+        font-size: 0.75rem;
+    }
+
+    .faq-pergunta {
+        padding: 16px;
+        font-size: 0.82rem;
+    }
+
+    .faq-resposta {
+        padding: 0 16px 18px;
+    }
+
+    .faq-resposta p {
+        font-size: 0.8rem;
+        text-align: left;
+    }
+
+    .faq-sinal {
+        width: 27px;
+        height: 27px;
+    }
+
+
+    /* Chamada final */
+
+    .sobre-final {
+        padding: 50px 20px;
+    }
+
+}
+
+
+/* ========================================
+   CELULARES MENORES
+======================================== */
+
+@media (max-width: 420px) {
+
+    .sobre-texto h1 {
+        font-size: 1.9rem;
+    }
+
+    .sobre-texto p {
+        font-size: 0.83rem;
+    }
+
+    .botao-explorar {
+        width: 100%;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .faq-introducao h2 {
+        font-size: 1.8rem;
+    }
+
+    .faq-filtros {
+        gap: 6px;
+    }
+
+    .filtro-topico {
+        padding: 8px 12px;
+        font-size: 0.7rem;
+    }
+
+    .faq-pergunta {
+        gap: 10px;
+        font-size: 0.78rem;
+    }
+
+    .grupo-etiqueta {
+        font-size: 0.58rem;
+    }
+
+}
+
+
+/* ========================================
+   ACESSIBILIDADE
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .pagina-sobre *,
+    .pagina-sobre *::before,
+    .pagina-sobre *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+
+}
